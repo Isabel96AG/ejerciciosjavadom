@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio6DOM</title>
+</head>
+
+<body>
+    <div>
+        <select id=boton></select>
+    </div>
+
+
+
+    <script>
+        let operacion = window.prompt(`Elige una opcion
+ 1-Suma 
+ 2-Resta
+ 3-Multiplicacion
+ 4-Division   
+    
+    
+      `).toLowerCase();
+        let num1 = parseInt(window.prompt("Escribe un numero"));
+        let num2 = parseInt(window.prompt("Escribe otro numero"));
+        if (operacion === "suma") {
+
+            let boton = document.getElementById('boton').innerHTML =
+                `<option> ${num1+num2 } suma </option>`;
+
+        } else if (operacion === "resta") {
+
+            let boton = document.getElementById('boton').innerHTML =
+                `<option> ${num1-num2 } resta</option>`;
+        } else if (operacion === "multiplicacion") {
+
+            let boton = document.getElementById('boton').innerHTML =
+                `<option> ${num1*num2 }  multiplicacion</option>`;
+        } else if (operacion === "division") {
+
+            let boton = document.getElementById('boton').innerHTML =
+                `<option> ${num1/num2 } division</option>`;
+        } else {
+            window.alert("la opcion no es correcta");
+        }
+    </script>
+
+</body>
+
+</html>

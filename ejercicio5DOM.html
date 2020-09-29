@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div id=suma></div>
+        <div id=resta></div>
+        <div id=multiplicacion></div>
+        <div id=division></div>
+        <div id=resto></div>
+    </div>
+    <script>
+        let numero1 = parseInt(window.prompt('Escrine un numero'));
+        let numero2 = parseInt(window.prompt('Escrine oto numero'));
+        let suma1 = numero1 + numero2;
+        let resta1 = numero1 - numero2;
+        let multiplicacion1 = numero1 * numero2;
+        let division1 = numero1 / numero2;
+        let resto1 = numero1 % numero2;
+
+
+
+
+        document.getElementById('suma').innerHTML = `
+    
+        <p> Èl resultado es ${suma1}</p>`;
+        let suma = document.getElementById('suma')
+        suma.style.color = "yellow";
+        suma.style.backgroundColor = 'red';
+
+        document.getElementById('resta').innerHTML = `
+    
+    <p> Èl resultado es ${resta1}</p>`;
+        let resta = document.getElementById('resta')
+        resta.style.color = "green";
+        resta.style.backgroundColor = 'yellow';
+
+
+        document.getElementById('multiplicacion').innerHTML =
+
+            `<p> Èl resultado es ${multiplicacion1}</p>`;
+        let multiplicacion = document.getElementById('multiplicacion')
+        multiplicacion.style.color = "red";
+        multiplicacion.style.backgroundColor = 'blue';
+
+
+        document.getElementById('division').innerHTML =
+
+            `<p> Èl resultado es ${division1}</p>`;
+        let division = document.getElementById('division')
+        division.style.color = "blue";
+        division.style.backgroundColor = 'white';
+
+
+
+        document.getElementById('resto').innerHTML = `
+    
+    <p> Èl resultado es ${resto1}</p>`;
+        let resto = document.getElementById('resto')
+        resto.style.color = "black";
+        resto.style.backgroundColor = 'red';
+    </script>
+</body>
+
+</html>
